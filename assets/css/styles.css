@@ -331,6 +331,14 @@ h3 {
   0% { transform: scale(0.5); opacity: 0.9; }
   70%, 100% { transform: scale(1.5); opacity: 0; }
 }
+a.badge {
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.25s var(--ease);
+}
+a.badge:hover { border-color: var(--accent); }
+.badge__arrow { transition: transform 0.25s var(--ease); }
+a.badge:hover .badge__arrow { transform: translateX(3px); }
 
 .link-arrow {
   display: inline-flex;
